@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Wifi, ShieldCheck, Tv, Zap, CheckCircle2, Phone, MessageCircle, ArrowRight, Router, Camera, Sparkles, Menu } from 'lucide-react';
 import './style.css';
 
-const PHONE_DISPLAY = '0372.191..218';
+const PHONE_DISPLAY = '0372.191.218';
 const PHONE_LINK = '0372191218'; // Kiểm tra lại số điện thoại trước khi công khai website.
 const zaloLink = `https://zalo.me/${PHONE_LINK}`;
 

@@ -1,29 +1,21 @@
 # Phuc FPT Website
 
-Website landing page tiếng Việt cho tư vấn Internet, Camera và truyền hình FPT, xây dựng bằng React + Vite.
+Landing page tiếng Việt cho tư vấn Internet, Camera và truyền hình. Dự án dùng React + Vite.
 
-## Chạy thử trên máy
-1. Cài Node.js bản LTS từ https://nodejs.org/
-2. Giải nén thư mục.
-3. Mở Terminal/Command Prompt tại thư mục dự án.
-4. Chạy:
-   ```bash
-   npm install
-   npm run dev
-   ```
-5. Mở địa chỉ localhost được hiển thị trong terminal.
+## Chạy trên máy tính
+1. Cài Node.js bản LTS: https://nodejs.org/
+2. Giải nén dự án và mở Terminal/CMD tại thư mục có `package.json`.
+3. Chạy `npm install`.
+4. Chạy `npm run dev` để xem bản phát triển.
+5. Chạy `npm run build` để kiểm tra bản production; kết quả nằm trong `dist/`.
 
-## Đưa lên Vercel
-Cách đơn giản:
-1. Tải thư mục dự án lên một repository GitHub.
-2. Đăng nhập https://vercel.com/ bằng GitHub.
-3. Chọn Add New → Project.
-4. Import repository vừa tạo.
-5. Vercel nhận diện Vite; nhấn Deploy.
+## Deploy lên Vercel qua GitHub
+1. Đẩy toàn bộ nội dung thư mục này lên repository GitHub (đảm bảo `package.json` nằm ở thư mục gốc repository, không nằm lồng thêm một thư mục).
+2. Trên Vercel chọn Add New → Project rồi import repository.
+3. Nếu cần cài thủ công, chọn Framework Preset `Vite`, Build Command `npm run build`, Output Directory `dist`.
+4. Chọn Deploy. File `vercel.json` đã khai báo các thiết lập build/output cơ bản.
 
-## Trước khi công khai
-Mở `src/main.jsx` và kiểm tra:
-- `PHONE_DISPLAY`: số điện thoại hiển thị.
-- `PHONE_LINK`: số dùng cho nút gọi điện và link Zalo. Định dạng phải đúng.
-- Giá cước, tốc độ, khuyến mãi, điều kiện tặng camera và dịch vụ FPT Play phải được xác nhận theo chương trình/khu vực thực tế.
-- Đây là trang tư vấn độc lập; chỉ dùng logo/nhãn hiệu chính thức nếu bạn có quyền sử dụng và không làm người xem hiểu nhầm đây là website chính thức của FPT Telecom.
+## Kiểm tra trước khi công khai
+- Kiểm tra số điện thoại trong `src/main.jsx`: `PHONE_DISPLAY` và `PHONE_LINK`.
+- Xác nhận giá cước, tốc độ, khuyến mãi, quà tặng và điều kiện theo khu vực/thời điểm thực tế.
+- Đây là trang tư vấn độc lập; không khiến người xem hiểu nhầm đây là website chính thức của FPT Telecom nếu không được ủy quyền.
